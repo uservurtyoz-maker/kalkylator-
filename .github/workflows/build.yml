@@ -8,6 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Unpack project zip
+        run: unzip -o calcai.zip
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
